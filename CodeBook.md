@@ -31,6 +31,7 @@ Merging the test and train data.
 
 - test <- is created by merging test_set,test_labels and test_subjects using cbind() function.
 - train <- is created by merging train_set,train_labels and train_subjects using cbind() function.
+
 merged_data <- is odtained by merging the test and train data using rbind().
 
 Extracting only the measurements on mean and standard deviation.
@@ -41,13 +42,21 @@ The activitycode column which contains all the codes for the activities are repl
 
 Descriptive variable names.
     - the *activitycode* column is renamed as *activity* using names() function
+    
     - the term *BodyBody* replaced as *Body* using names() function 
+    
     - the columns starting with abbreviation *'t'* are substituted with *'Time'*
+    
     - the columns starting with abbreviation  *'f'* are substituted with *'Freq'*
+    
     - the columns with punctuation characters in the column are replaced with empty strings
+    
     - the columns with string *mean* are substituted with *Mean*
+    
     - the columns with string *std* are substituted with *Std*
+    
     - the columns with string *angle* are substituted with *Angle*
+    
     - the columns with string *gravity* are substituted with *Gravity*
     
 Creating a second, independent tidy data set with the average of each variable for each activity and each subject.
