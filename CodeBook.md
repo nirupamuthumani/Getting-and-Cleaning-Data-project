@@ -5,7 +5,7 @@ Data
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 Data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-​
+
 The data is from UCI Machine Learning Repository : Human Activity Recognition Using Smartphones Dataset
     
 Processing Steps.
@@ -13,31 +13,39 @@ Processing Steps.
 Data was downloaded from the source files and the data assigned to variables.
 
 activitylabels <- List of activities performed with their codes.
+
 features <- Features from the accelerometer and gyroscope.
 
 Test Data
 
 test_set - contains test data of activities
+
 test_labels <- contains the code labels of the activites
+
 test_subjects <- identifies the subject who performed the activity undet test category
 
 Train Data
 
 train_set - contains training data of activities
+
 train_labels <- contains the code labels of the activites
+
 train_subjects <- identifies the subject who performed the activity under training category
 
 Merging the test and train data.
 
 - test <- is created by merging test_set,test_labels and test_subjects using cbind() function.
+- 
 - train <- is created by merging train_set,train_labels and train_subjects using cbind() function.
 
 merged_data <- is odtained by merging the test and train data using rbind().
 
 Extracting only the measurements on mean and standard deviation.
+
 cleandata <- is obtained by subsetting merged_data, selecting only the columns, subject,the activity code and the measurements on mean and standard deviation for each row.
 
 Descriptive activity names to name the activities in the set.
+
 The activitycode column which contains all the codes for the activities are replaced by the activity name.
 
 Descriptive variable names.
