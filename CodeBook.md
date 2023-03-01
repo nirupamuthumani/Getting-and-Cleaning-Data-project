@@ -35,7 +35,7 @@ train_subjects <- identifies the subject who performed the activity under traini
 Merging the test and train data.
 
 - test <- is created by merging test_set,test_labels and test_subjects using cbind() function.
-- 
+
 - train <- is created by merging train_set,train_labels and train_subjects using cbind() function.
 
 merged_data <- is odtained by merging the test and train data using rbind().
