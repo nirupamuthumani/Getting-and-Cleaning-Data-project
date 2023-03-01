@@ -11,7 +11,7 @@ The data is from UCI Machine Learning Repository : Human Activity Recognition Us
 Processing Steps
 Data was downloaded from the source files and the data assigned to variables.
 
-activitylabesl <- List of activities performed with their codes
+activitylabels <- List of activities performed with their codes
 features <- Features from the accelerometer and gyroscope
 Test Data
 test_set - contains test data of activities
